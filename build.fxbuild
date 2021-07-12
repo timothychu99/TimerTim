@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<anttasks:AntTask xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:anttasks="http://org.eclipse.fx.ide.jdt/1.0" buildDirectory="${project}/">
+  <deploy height="30" placeholderref="" placeholderid="" width="100" packagingFormat="all">
+    <application name="TImTimer" mainclass="application.Main" version="1.0" toolkit="fx"/>
+    <info title="TimerTim" vendor="TIm Chu"/>
+  </deploy>
+  <signjar alias="" storepass=""/>
+</anttasks:AntTask>
