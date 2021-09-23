@@ -48,8 +48,11 @@ public class musicPlayer { //plays the sounds
 	public void play(int repeats) {
 
 		try
-	    {	 
-			musicPlayer au = new musicPlayer(fileNumber);			
+	    {	
+		musicPlayer au = new musicPlayer(fileNumber);	
+		FloatControl gainControl = 
+	        	    (FloatControl) au.clip.getControl(FloatControl.Type.MASTER_GAIN);
+	        gainControl.setValue(-30.0f); // Reduce volume by 30 decibels.
 	        au.clip.start();
 	        au.clip.loop(repeats-1);
 	    } 
